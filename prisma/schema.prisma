@@ -26,6 +26,7 @@ model Post {
   content   String
   imageUrl  String?
   category  String?
+  authorId: user.id,
   createdAt DateTime @default(now())
 
   authorId  String?  @db.ObjectId
